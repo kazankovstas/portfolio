@@ -119,3 +119,10 @@
   font-size: 20px;
   line-height: 28px;
 }
+
+.skills__image {
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
