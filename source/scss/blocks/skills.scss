@@ -1,0 +1,121 @@
+.skills {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(1, 1, 1, 0.16) 100%
+    ),
+    #ffffff;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+.skills__wrapper {
+  margin: 0 auto;
+  padding: 90px 0;
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    padding: 0;
+  }
+}
+
+.projects__header {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(1, 1, 1, 0.16) 100%
+    ),
+    #ffffff;
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    min-height: 270px;
+    background: url(../../img/bgi-2.jpg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.skills__heading {
+  width: 260px;
+  background-color: rgba(255, 255, 255, 0.4);
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+}
+
+.skills__container {
+  max-width: 90%;
+  margin: 60px auto 0;
+  @media (min-width: $tablet-width) {
+    margin: 100px auto 0;
+    width: 522px;
+  }
+}
+
+.skills__title {
+  max-width: 220px;
+  @media (min-width: $tablet-width) {
+    max-width: 320px;
+  }
+}
+
+.skills__heading {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.185em;
+  background-color: rgba(255, 255, 255, 0.4);
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+// List
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 130px);
+  list-style: none;
+  padding: 0;
+}
+
+// Skil-item
+.skills__item {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.skills__list-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.185em;
+  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+.skills__description {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 28px;
+}

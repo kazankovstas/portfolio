@@ -1,0 +1,129 @@
+.projects {
+  background-color: #1a1a1a;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projects__item {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(1, 1, 1, 0.16) 100%
+    ),
+    #ffffff;
+}
+
+.projects__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.project {
+  position: relative;
+}
+
+.project:hover .project__container {
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  opacity: 1;
+  visibility: visible;
+  z-index: 0;
+}
+
+.project__container {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.3s;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px 0;
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.185em;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.project__description {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+  padding: 10px 20px 30px;
+  text-align: center;
+}
+
+// --------------------------- button
+.project__button-container {
+  width: 220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+    width: 360px;
+  }
+}
+
+.button {
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  outline: 3px solid;
+  outline-offset: 3px;
+  outline-color: rgba(71, 126, 232, 0.5);
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  &:hover {
+    color: rgba(71, 126, 232, 0.7);
+    outline-color: rgba(71, 126, 232, 0);
+    outline-offset: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 10px 14px;
+    font-size: 18px;
+  }
+}

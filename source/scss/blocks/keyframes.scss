@@ -1,0 +1,18 @@
+@keyframes shake {
+  33% {
+    transform: translateX(-15px);
+  }
+  66% {
+    transform: translateX(15px);
+  }
+}
+
+/* Выпадание меню */
+@keyframes bounce {
+  0% {
+    transform: translateY(-228px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

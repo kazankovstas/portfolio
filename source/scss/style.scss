@@ -1,0 +1,21 @@
+// Global
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+// Blocks
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/projects.scss";
+@import "blocks/skills.scss";
+
+// intro
+@import "blocks/intro.scss";
+
+// footer
+@import "blocks/footer.scss";
+
+// Elements
+@import "blocks/keyframes.scss";
+@import "blocks/link.scss";

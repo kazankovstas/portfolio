@@ -1,0 +1,127 @@
+.main-nav__wrapper {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+// .main-nav {
+//   position: absolute;
+//   top: 57px;
+//   width: 100%;
+//   @media (min-width: $tablet-width) {
+//     top: 0;
+//   }
+// }
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: -43px;
+  width: 40px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+  transition: 0.2;
+  &:hover {
+    opacity: 0.9;
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url(../../img/menu-open.svg);
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url(../../img/menu-close.svg);
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 80px;
+  align-items: center;
+  animation: bounce 1s ease-in-out;
+  @media (max-width: $tablet-width) {
+    &--toggle {
+      display: none;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 80px;
+  }
+}
+
+.main-nav__item {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.main-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+}
+
+.ptsans {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.montserrat {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.raleway {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.inter {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}

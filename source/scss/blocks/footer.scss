@@ -1,0 +1,39 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  height: 290px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  border: 2px solid #ff34c0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__link {
+  color: #ff34c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: #222222;
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+}
+
+.footer__copyright {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
