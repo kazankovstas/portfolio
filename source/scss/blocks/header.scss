@@ -7,19 +7,3 @@
   align-items: center;
   z-index: 99;
 }
-
-// .header__container {
-//   position: relative;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   display: flex;
-// }
-
-.header__logo {
-  padding: 0 20px;
-  color: #ff34c0;
-  z-index: 99999999999999999999999;
-  @media (min-width: $desktop-width) {
-    padding: 0 80px;
-  }
-}
