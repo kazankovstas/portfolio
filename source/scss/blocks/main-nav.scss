@@ -7,19 +7,10 @@
   }
 }
 
-// .main-nav {
-//   position: absolute;
-//   top: 57px;
-//   width: 100%;
-//   @media (min-width: $tablet-width) {
-//     top: 0;
-//   }
-// }
-
 .main-nav__toggle {
   position: absolute;
   right: 20px;
-  top: -43px;
+  top: -58px;
   width: 40px;
   height: 35px;
   background-color: transparent;
@@ -37,11 +28,11 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  background-image: url(../../img/menu-open.svg);
+  background-image: url(../img/icon/menu-open.svg);
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url(../../img/menu-close.svg);
+  background-image: url(../img/icon/menu-close.svg);
 }
 
 .main-nav__list {
@@ -55,6 +46,9 @@
   align-items: center;
   animation: bounce 1s ease-in-out;
   @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     &--toggle {
       display: none;
     }
@@ -71,26 +65,44 @@
 }
 
 .main-nav__item {
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.7);
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
-}
-
-.main-nav__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
   @media (min-width: $tablet-width) {
     box-shadow: none;
+    width: auto;
+    background-color: transparent;
   }
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px 30px;
+  text-align: center;
   &:hover {
     background-color: #ffffff;
     color: #000000;
-    padding: 10px 30px;
-    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+      rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
+    }
+    &:hover {
+      padding: 10px 30px;
+      border-radius: 10px;
+    }
   }
 }
 
