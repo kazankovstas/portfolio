@@ -1,0 +1,15 @@
+.about {
+  min-height: 100vh;
+  background-color: rgb(184, 192, 191);
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  @media (min-width: $tablet-width) {
+    padding: 210px 70px 70px;
+  }
+}

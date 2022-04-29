@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="css/style.min.css" />
     <script src="js/scripts.js" defer></script>
-    <title>Portfolio</title>
+    <title>Kazankov Stanislav</title>
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -24,22 +24,15 @@
               <li class="main-nav__item">
                 <a
                   class="link main-nav__link main-nav__link_current"
-                  href="#intro"
+                  href="#about"
                   >About me</a
                 >
               </li>
               <li class="main-nav__item">
                 <a
                   class="link main-nav__link main-nav__link_current"
-                  href="#footer"
-                  >Contact me</a
-                >
-              </li>
-              <li class="main-nav__item">
-                <a
-                  class="link main-nav__link main-nav__link_current"
-                  href="#projects"
-                  >My projects</a
+                  href="#portfolio"
+                  >Portfolio</a
                 >
               </li>
               <li class="main-nav__item">
@@ -49,18 +42,75 @@
                   >Skills</a
                 >
               </li>
+              <li class="main-nav__item">
+                <a
+                  class="link main-nav__link main-nav__link_current"
+                  href="#footer"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
       </header>
       <main class="page__main main">
-        <h1 class="visually-hidden">Станислав Казанков</h1>
+        <h1 class="visually-hidden">Stanislav Kazankov</h1>
         <section class="intro" id="intro">
+          <h2 class="visually-hidden">Greeting</h2>
           <div class="intro__wrapper">
-            <h2 class="intro__title heading">About Me</h2>
+            <div class="intro__left-column">
+              <p class="intro__greeting intro__about">Hi, I am</p>
+              <p class="intro__name intro__about">Stanislav Kazankov</p>
+              <p class="intro__profession intro__about">Front-end Developer</p>
+              <div class="intro__buttons">
+                <a
+                  class="intro__button"
+                  href="mailto:kazankovstas.jb@gmail.com"
+                  target="_blank"
+                >
+                  <svg
+                    width="23"
+                    height="18"
+                    viewBox="0 0 23 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.6429 1H2.35714C1.72596 1 1.21429 1.51167 1.21429 2.14286V15.8571C1.21429 16.4883 1.72596 17 2.35714 17H20.6429C21.274 17 21.7857 16.4883 21.7857 15.8571V2.14286C21.7857 1.51167 21.274 1 20.6429 1Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M1.21429 2.71436L11.5 9.00007L21.7857 2.71436"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+                <a class="intro__button" href="img/cv.pdf" target="_blank">
+                  cv
+                </a>
+              </div>
+            </div>
+            <div class="intro__right-column">
+              <img href="img/bgi.png" />
+            </div>
           </div>
         </section>
-        <section class="projects" id="projects">
+        <section class="about" id="about">
+          <div class="about__wrapper">
+            <h2 class="intro__title heading">About Me</h2>
+            <p>Education</p>
+            <p>Penza State University 2012-2018</p>
+            <p>specialization</p>
+            <p>law enforcement activities</p>
+            <p>Yandex Practicum 2021</p>
+            <p>HTML Academy 2021-2022</p>
+          </div>
+        </section>
+        <section class="projects" id="portfolio">
           <div class="projects__header">
             <h2 class="skills__heading heading">Portfolio</h2>
           </div>

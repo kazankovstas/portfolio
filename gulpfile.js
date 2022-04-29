@@ -62,7 +62,7 @@ const optimizeImages = () => {
 };
 
 const copyImages = () => {
-  return src("source/img/**/*.{png,jpg,svg}").pipe(dest("build/img"));
+  return src("source/img/**/*.{png,jpg,svg,pdf}").pipe(dest("build/img"));
 };
 
 const createWebp = () => {

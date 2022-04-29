@@ -2,25 +2,132 @@
   background-image: url(../../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 737px;
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-    @media (min-width: $tablet-width) {
-      padding: 130px 70px 70px;
-    }
-  }
+  padding: 50px 20px 150px;
   @media (min-width: $tablet-width) {
-    min-height: 100vh;
     background: radial-gradient(
         50% 50% at 50% 50%,
         rgba(26, 21, 21, 0) 0%,
         rgba(1, 1, 1, 0.16) 100%
       ),
       #ffffff;
+  }
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  @media (min-width: 1310px) {
+    grid-template-columns: 600px 550px;
+    gap: 80px;
+    width: 1310px;
+  }
+}
+
+.intro__left-column {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop-width) {
+    padding: 20% 0 0 0;
+  }
+}
+
+.intro__right-column {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-image: url(../../img/ava.jpg);
+    object-fit: cover;
+    background-position: -172px -75px;
+    border-radius: 90px;
+    width: 550px;
+  }
+}
+
+// --------------------------------------------------------  text-block
+
+.intro {
+  &__about {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    @media (min-width: $tablet-width) {
+      font-size: 28px;
+    }
+  }
+  &__greeting {
+    margin-bottom: 10px;
+    color: white;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+      color: black;
+    }
+  }
+  &__name {
+    font-size: 38px;
+    margin-bottom: 8px;
+    color: white;
+    @media (min-width: $tablet-width) {
+      font-size: 56px;
+      margin-bottom: 18px;
+      color: black;
+    }
+  }
+  &__profession {
+    color: #909090;
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+// ----------------------------------------------------------------- Button
+
+.intro__buttons {
+  display: flex;
+  gap: 30px;
+  @media (min-width: $tablet-width) {
+    gap: 80px;
+  }
+}
+
+.intro__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 60px;
+  gap: 24px;
+  font-size: 26px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: #909090;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  &:hover {
+    box-shadow: none;
+    color: #43faf4;
+  }
+  &:hover path {
+    stroke: #43faf4;
+  }
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    height: auto;
+    padding: 10px 28px;
+    font-size: 22px;
   }
 }
 
