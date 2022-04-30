@@ -19,3 +19,21 @@
     padding: 210px 70px 70px;
   }
 }
+
+.about__description {
+  text-align: justify;
+  // max-width: 265px;
+  padding: 80px 0 0 0;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 82%;
+  text-indent: 35px;
+  @media (min-width: $tablet-width) {
+    // max-width: 460px;
+    font-size: 22px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 850px;
+    font-size: 24px;
+  }
+}
