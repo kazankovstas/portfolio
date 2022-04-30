@@ -11,6 +11,7 @@
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 80px;
   }
 }
 
@@ -19,35 +20,38 @@
   padding: 90px 0;
   @media (min-width: $tablet-width) {
     width: 80%;
-    padding: 0;
-  }
-}
-
-.projects__header {
-  background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(26, 21, 21, 0) 0%,
-      rgba(1, 1, 1, 0.16) 100%
-    ),
-    #ffffff;
-  min-height: 170px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: $tablet-width) {
-    min-height: 350px;
-    padding-top: 80px;
-    background: url(../img/bgi-2.jpg) fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
 .skills__heading {
-  width: 260px;
-  background-color: rgba(255, 255, 255, 0.4);
+  display: none;
   @media (min-width: $tablet-width) {
-    width: 500px;
+    padding: 25px 65px;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 auto 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.35538em;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    border: 10px solid black;
+    letter-spacing: 0.185em;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 300px;
+  }
+}
+
+.skills__header_mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -55,8 +59,11 @@
   max-width: 90%;
   margin: 60px auto 0;
   @media (min-width: $tablet-width) {
-    margin: 100px auto 0;
+    margin: 40px auto 0;
     width: 522px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 100px auto 0;
   }
 }
 
@@ -103,8 +110,8 @@
 .skills__list-title {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.185em;
   background-color: transparent;

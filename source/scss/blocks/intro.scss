@@ -2,7 +2,7 @@
   background-image: url(../../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 20px 150px;
+  padding: 150px 20px;
   @media (min-width: $tablet-width) {
     background: radial-gradient(
         50% 50% at 50% 50%,
@@ -15,36 +15,12 @@
 
 .intro__wrapper {
   margin: 0 auto;
-  width: 80%;
   display: grid;
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  @media (min-width: $tablet-width) {
+    margin-left: 10%;
   }
-  @media (min-width: 1310px) {
-    grid-template-columns: 600px 550px;
-    gap: 80px;
-    width: 1310px;
-  }
-}
-
-.intro__left-column {
-  display: flex;
-  flex-direction: column;
   @media (min-width: $desktop-width) {
-    padding: 20% 0 0 0;
-  }
-}
-
-.intro__right-column {
-  display: none;
-  @media (min-width: $desktop-width) {
-    display: block;
-    background-image: url(../../img/ava.jpg);
-    object-fit: cover;
-    background-position: -172px -75px;
-    border-radius: 90px;
-    width: 550px;
+    margin-left: 30%;
   }
 }
 
@@ -162,5 +138,72 @@
     padding: 25px 65px;
     font-size: 30px;
     line-height: 38px;
+    margin-bottom: 80px;
+  }
+}
+
+// ---------------------------------------------- education
+.education {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #ff34c0;
+  border-bottom: 2px solid #ff34c0;
+  font-family: "Inter", "Arial", sans-serif;
+  padding: 120px 0;
+}
+
+.education__heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.education__title {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.education__list {
+  padding: 50px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.education__date {
+  width: 120px;
+  font-weight: 700;
+  color: #909090;
+}
+
+.place {
+  font-weight: 700;
+  font-size: 20px;
+}
+.spec {
+  color: #909090;
+  font-weight: 700;
+  padding-left: 20px;
+  text-align: end;
+  @media (min-width: $tablet-width) {
+    text-align: inherit;
   }
 }
