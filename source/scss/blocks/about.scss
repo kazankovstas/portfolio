@@ -1,6 +1,5 @@
 .about {
   min-height: 100vh;
-  // background-color: rgb(184, 192, 191);
   background: radial-gradient(
       50% 50% at 50% 50%,
       rgba(26, 21, 21, 0) 0%,
@@ -14,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0;
+  padding: 140px 0 40px;
   @media (min-width: $tablet-width) {
     padding: 210px 70px 70px;
   }
@@ -22,18 +21,83 @@
 
 .about__description {
   text-align: justify;
-  // max-width: 265px;
   padding: 80px 0 0 0;
   font-size: 18px;
   line-height: 1.5;
   max-width: 82%;
   text-indent: 35px;
   @media (min-width: $tablet-width) {
-    // max-width: 460px;
     font-size: 22px;
   }
   @media (min-width: $desktop-width) {
     max-width: 850px;
     font-size: 24px;
+  }
+}
+
+// ---------------------------------------------- education
+.education {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", "Arial", sans-serif;
+  padding: 120px 0 0;
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
+}
+
+.education__heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.education__title {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.education__list {
+  padding: 50px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.education__date {
+  width: 120px;
+  font-weight: 700;
+  color: #909090;
+}
+
+.education__place {
+  font-weight: 700;
+  font-size: 20px;
+}
+.education__spec {
+  color: #909090;
+  font-weight: 700;
+  padding-left: 20px;
+  text-align: end;
+  @media (min-width: $tablet-width) {
+    text-align: inherit;
   }
 }
