@@ -10,7 +10,20 @@
     <link rel="apple-touch-icon" href="img/favicon/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <script src="js/scripts.js" defer></script>
+    <link
+      rel="preload"
+      href="fonts/montserrat/Montserrat-400.woff2"
+      type="font/woff2"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="fonts/inter/inter-regular.woff2"
+      type="font/woff2"
+      as="font"
+    />
+    <link rel="preload" href="img/background.webp" />
+    <script src="js/scripts.js" async></script>
     <title>Kazankov Stanislav</title>
   </head>
   <body class="page__body">
@@ -111,7 +124,12 @@
             </p>
             <div class="about__education education">
               <div class="education__heading">
-                <img src="img/icon/education.svg" alt="education-icon" />
+                <img
+                  src="img/icon/education.svg"
+                  alt="education-icon"
+                  width="50"
+                  height="50"
+                />
                 <p class="education__title">Education</p>
               </div>
               <ul class="education__list">
@@ -155,11 +173,14 @@
           </div>
           <ul class="projects__list">
             <li class="projects__item project">
-              <img
-                class="projects__image"
-                src="img/sedona.jpg"
-                alt="Project Sedona"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/sedona.webp" />
+                <img
+                  class="projects__image"
+                  src="img/sedona.jpg"
+                  alt="Project Sedona"
+                />
+              </picture>
               <div class="project__container">
                 <h3 class="project__title">Sedona</h3>
                 <p class="project__description">
@@ -184,11 +205,14 @@
               </div>
             </li>
             <li class="projects__item project">
-              <img
-                class="projects__image"
-                src="img/pink.jpg"
-                alt="Project Pink"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/pink.webp" />
+                <img
+                  class="projects__image"
+                  src="img/pink.jpg"
+                  alt="Project Pink"
+                />
+              </picture>
               <div class="project__container">
                 <h3 class="project__title">Pink</h3>
                 <p class="project__description">
@@ -213,11 +237,14 @@
               </div>
             </li>
             <li class="projects__item project">
-              <img
-                class="projects__image"
-                src="img/travel.jpg"
-                alt="Project Russian Travel"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/travel.webp" />
+                <img
+                  class="projects__image"
+                  src="img/travel.jpg"
+                  alt="Project Russian Travel"
+                />
+              </picture>
               <div class="project__container">
                 <h3 class="project__title">russian-travel</h3>
                 <p class="project__description">
@@ -242,11 +269,14 @@
               </div>
             </li>
             <li class="projects__item project">
-              <img
-                class="projects__image"
-                src="img/mesto.jpg"
-                alt="Project Mesto"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/mesto.webp" />
+                <img
+                  class="projects__image"
+                  src="img/mesto.jpg"
+                  alt="Project Mesto"
+                />
+              </picture>
               <div class="project__container">
                 <h3 class="project__title">mesto</h3>
                 <p class="project__description">
@@ -271,11 +301,14 @@
               </div>
             </li>
             <li class="projects__item project">
-              <img
-                class="projects__image"
-                src="img/nerds.jpg"
-                alt="Project Nerds"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/nerds.webp" />
+                <img
+                  class="projects__image"
+                  src="img/nerds.jpg"
+                  alt="Project Nerds"
+                />
+              </picture>
               <div class="project__container">
                 <h3 class="project__title">Nerds</h3>
                 <p class="project__description">
@@ -308,7 +341,6 @@
                   alt="Project How to learn"
                 />
               </picture>
-
               <div class="project__container">
                 <h3 class="project__title">how-to-learn</h3>
                 <p class="project__description">

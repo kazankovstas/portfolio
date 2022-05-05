@@ -46,9 +46,10 @@
   @media (min-width: $tablet-width) {
     min-height: 350px;
     padding-top: 80px;
-    background: url(../img/bgi-2.jpg) fixed;
+    background-image: url(../img/bgi.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 }
 
