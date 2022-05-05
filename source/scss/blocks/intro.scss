@@ -82,26 +82,34 @@
   gap: 24px;
   font-size: 26px;
   border-radius: 8px;
-  transition: 0.2s;
   text-decoration: none;
   color: #fff;
-  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  transition: 0.2s;
   font-family: "Montserrat", "Arial", sans-serif;
   background-color: #2a2c2f;
-  outline: 1px solid #46484b;
+  outline: 2px solid #46484b;
   outline-offset: 1px;
 
   &:hover {
-    color: #43faf4;
-    outline: 1px solid #43faf4;
+    color: #ff34c0;
+    outline: 2px solid #ff34c0;
     box-shadow: rgba(118, 137, 150, 0.25) 0px 30px 60px -12px inset,
       rgba(156, 156, 156, 0.3) 0px 18px 36px -18px inset;
   }
   &:hover path {
-    stroke: #43faf4;
+    stroke: #ff34c0;
   }
   &:active {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  &:focus {
+    transition: none;
+    outline: 3px solid #ff34c0;
+    outline-offset: 2px;
+    color: #ff34c0;
+  }
+  &:focus path {
+    stroke: #ff34c0;
   }
   @media (min-width: $tablet-width) {
     width: 180px;
