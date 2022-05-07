@@ -119,6 +119,10 @@
       color: #fff;
       background-color: transparent;
     }
+    &:active {
+      outline: none;
+      border: none;
+    }
   }
 }
 

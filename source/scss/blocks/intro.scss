@@ -111,6 +111,10 @@
   &:focus path {
     stroke: #ff34c0;
   }
+  &:active {
+    outline: none;
+    border: none;
+  }
   @media (min-width: $tablet-width) {
     width: 180px;
     height: auto;

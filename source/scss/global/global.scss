@@ -29,3 +29,8 @@ img {
   outline-offset: 6px;
   border-radius: 8px;
 }
+
+*:active {
+  outline: none;
+  border: none;
+}
