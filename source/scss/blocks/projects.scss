@@ -66,6 +66,8 @@
   }
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1440px;
+    padding: 120px 0;
   }
 }
 
