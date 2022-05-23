@@ -91,7 +91,7 @@
   background-color: #2a2c2f;
   outline: 2px solid #46484b;
   outline-offset: 1px;
-
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   &:hover {
     color: #ff34c0;
     outline: 2px solid #ff34c0;
