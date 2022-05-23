@@ -5,14 +5,13 @@
 .projects__heading {
   display: none;
   @media (min-width: $tablet-width) {
-    padding: 25px 65px;
-    font-size: 30px;
-    line-height: 38px;
+    padding: 20px 48px;
+    font-size: 22px;
+    line-height: 1.2;
     margin: 0 auto 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    letter-spacing: 0.35538em;
     font-family: "Montserrat";
     text-transform: uppercase;
     font-weight: 700;
