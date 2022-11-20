@@ -1,29 +1,24 @@
 .intro {
-  background-image: url(../img/background.webp);
+  background-color: #171718;
+  background-image: url("../../img/header-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: center center;
   padding: 150px 40px;
   @media (min-width: $tablet-width) {
-    padding: 100px 20px 30px;
-    background: radial-gradient(
-        50% 50% at 50% 50%,
-        rgba(26, 21, 21, 0) 0%,
-        rgba(1, 1, 1, 0.16) 100%
-      ),
-      #ffffff;
+    min-height: 750px;
   }
 }
 
 .intro__wrapper {
   margin: 0 auto;
   display: grid;
+  font-family: "DM Sans", "Arial", sans-serif;
   @media (min-width: $tablet-width) {
-    margin-left: 10%;
+    max-width: 640px;
   }
   @media (min-width: $desktop-width) {
-    // margin-left: 30%;
     margin: 0 auto;
-    max-width: 1200px;
   }
 }
 
@@ -31,29 +26,31 @@
 
 .intro {
   &__about {
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
     @media (min-width: $tablet-width) {
-      font-size: 28px;
+      font-size: 44px;
+      text-align: center;
     }
   }
   &__greeting {
     margin-bottom: 10px;
     color: white;
+    font-size: 36px;
+    line-height: 1.1;
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
-      color: black;
+      font-size: 54px;
     }
   }
   &__name {
-    font-size: 38px;
+    color: #ff34c0;
+    font-style: normal;
     margin-bottom: 8px;
-    color: white;
     @media (min-width: $tablet-width) {
-      font-size: 56px;
       margin-bottom: 18px;
-      color: black;
     }
   }
   &__profession {
@@ -61,6 +58,7 @@
     margin-bottom: 40px;
     @media (min-width: $tablet-width) {
       margin-bottom: 70px;
+      font-size: 22px;
     }
   }
 }
@@ -69,9 +67,11 @@
 
 .intro__buttons {
   display: flex;
-  gap: 30px;
-  @media (min-width: $tablet-width) {
-    gap: 80px;
+  justify-content: center;
+  gap: 50px;
+  @media (max-width: $tablet-width) {
+    flex-direction: column-reverse;
+    gap: 40px;
   }
 }
 
@@ -79,10 +79,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95px;
-  height: 60px;
+  padding: 10px;
+  width: 186px;
+  height: auto;
   gap: 24px;
-  font-size: 26px;
+  font-size: 18px;
   border-radius: 8px;
   text-decoration: none;
   color: #fff;
@@ -118,10 +119,10 @@
     border: none;
   }
   @media (min-width: $tablet-width) {
-    width: 180px;
+    width: 186px;
     height: auto;
-    padding: 10px 28px;
-    font-size: 22px;
+    padding: 10px;
+    font-size: 18px;
   }
 }
 

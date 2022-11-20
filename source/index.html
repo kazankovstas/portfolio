@@ -38,30 +38,18 @@
               <li class="main-nav__item">
                 <a
                   class="link main-nav__link main-nav__link_current"
-                  href="#about"
-                  >About me</a
-                >
-              </li>
-              <li class="main-nav__item">
-                <a
-                  class="link main-nav__link main-nav__link_current"
                   href="#portfolio"
-                  >Portfolio</a
+                  >Projects</a
                 >
               </li>
               <li class="main-nav__item">
-                <a
-                  class="link main-nav__link main-nav__link_current"
-                  href="#skills"
-                  >Skills</a
-                >
+                <a class="link main-nav__link" href="about.html">About me</a>
               </li>
               <li class="main-nav__item">
-                <a
-                  class="link main-nav__link main-nav__link_current"
-                  href="#footer"
-                  >Contact</a
-                >
+                <a class="link main-nav__link" href="skills.html">Skills</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="link main-nav__link" href="contacts.html">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -72,9 +60,16 @@
         <section class="intro" id="intro">
           <h2 class="visually-hidden">Greeting</h2>
           <div class="intro__wrapper">
-            <p class="intro__greeting intro__about">Hi, I am</p>
-            <p class="intro__name intro__about">Stanislav Kazankov</p>
-            <p class="intro__profession intro__about">Front-end Developer</p>
+            <p class="intro__about">
+              <strong class="intro__greeting"
+                >Hi, my name is <em class="intro__name">Stanislav</em></strong
+              >
+              <br />
+              a frontend developer
+            </p>
+            <p class="intro__profession intro__about">
+              with passion for learning and creating
+            </p>
             <div class="intro__buttons">
               <a
                 class="intro__button"
@@ -107,62 +102,14 @@
                 href="img/KazankovStas-CV.pdf"
                 target="_blank"
                 ><span class="visually-hidden">my resume</span>
-                cv
+                Download CV
               </a>
             </div>
           </div>
         </section>
-        <section class="about" id="about">
-          <div class="about__wrapper">
-            <h2 class="intro__title heading">About Me</h2>
-            <p class="about__description">
-              Hello everyone, I'm Stanislav Kazankov. My passion is to create
-              and explore modern attractive websites. I have been studying web
-              development since 2021. I&nbsp;specialize in website layout, and
-              I&nbsp;plan to develop my JavaScript and React skills in the near
-              future. I&nbsp;create attractive websites using a&nbsp;CSS
-              framework such as SCSS. During my studies, I worked on several
-              projects, the links to which I posted below in the portfolio
-              section.
-            </p>
-            <div class="about__education education">
-              <div class="education__heading">
-                <img
-                  src="img/icon/education.svg"
-                  alt="education-icon"
-                  width="50"
-                  height="50"
-                />
-                <p class="education__title">Education</p>
-              </div>
-              <ul class="education__list">
-                <li class="education__item">
-                  <p class="education__date">2012-2018</p>
-                  <div class="education__info">
-                    <p class="education__place">Penza State University</p>
-                    <p class="education__spec">Law Enforcement Activities</p>
-                  </div>
-                </li>
-                <li class="education__item">
-                  <p class="education__date">2021</p>
-                  <div class="education__info">
-                    <p class="education__place">Yandex Practicum</p>
-                    <p class="education__spec">Web Developer</p>
-                  </div>
-                </li>
-                <li class="education__item">
-                  <p class="education__date">2021-2022</p>
-                  <div class="education__info">
-                    <p class="education__place">HTML Academy</p>
-                    <p class="education__spec">Front-end Developer</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+
         <section class="projects" id="portfolio">
-          <div class="projects__header">
+          <!-- <div class="projects__header">
             <h2 class="projects__heading">Portfolio</h2>
             <div class="projects__header_mobile">
               <img
@@ -173,7 +120,8 @@
               />
               <p class="education__title">Portfolio</p>
             </div>
-          </div>
+          </div> -->
+          <h2 class="title-1">Projects</h2>
           <ul class="projects__list">
             <li class="projects__item project">
               <picture>
@@ -373,110 +321,6 @@
             </li>
           </ul>
         </section>
-        <section class="skills" id="skills">
-          <div class="skills__wrapper">
-            <h2 class="skills__heading">Skills</h2>
-            <div class="skills__header_mobile">
-              <img
-                src="img/icon/skills.svg"
-                width="40"
-                height="40"
-                alt="education-icon"
-              />
-              <p class="education__title">Skills</p>
-            </div>
-            <div class="skills__container">
-              <p class="skills__list-title">Using now:</p>
-              <ul class="skills__list">
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/html5.svg"
-                    width="45"
-                    height="70"
-                    alt="HTML5"
-                  />
-                  <p class="skills__description">HTML5</p>
-                </li>
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/css3.svg"
-                    width="45"
-                    height="70"
-                    alt="CSS3"
-                  />
-                  <p class="skills__description">CSS3</p>
-                </li>
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/sass.svg"
-                    width="70"
-                    height="70"
-                    alt="SASS"
-                  />
-                  <p class="skills__description">SASS</p>
-                </li>
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/gulp.svg"
-                    width="65"
-                    height="50"
-                    alt="GULP"
-                  />
-                  <p class="skills__description">GULP</p>
-                </li>
-              </ul>
-            </div>
-            <div class="skills__container">
-              <p class="skills__list-title">Learning:</p>
-              <ul class="skills__list">
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/javascript.svg"
-                    width="50"
-                    height="70"
-                    alt="JS"
-                  />
-                  <p class="skills__description">JS</p>
-                </li>
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/git.svg"
-                    width="50"
-                    height="70"
-                    alt="Git"
-                  />
-                  <p class="skills__description">Git</p>
-                </li>
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/react.svg"
-                    width="50"
-                    height="70"
-                    alt="React"
-                  />
-                  <p class="skills__description">React</p>
-                </li>
-                <li class="skills__item">
-                  <img
-                    class="skills__image"
-                    src="img/icon/webpack.svg"
-                    width="50"
-                    height="70"
-                    alt="Webpack"
-                  />
-                  <p class="skills__description">Webpack</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </main>
       <footer class="page__footer footer" id="footer">
         <div class="footer__wrapper">
@@ -494,7 +338,7 @@
                 target="_blank"
               >
                 <span class="visually-hidden">GitHub</span>
-                <svg width="30" height="30">
+                <svg width="38" height="38">
                   <use xlink:href="img/sprites.svg#github"></use>
                 </svg>
               </a>
@@ -506,7 +350,7 @@
                 target="_blank"
               >
                 <span class="visually-hidden">Telegram</span>
-                <svg width="30" height="30">
+                <svg width="38" height="38">
                   <use xlink:href="img/sprites.svg#telegram"></use>
                 </svg>
               </a>
@@ -518,8 +362,20 @@
                 target="_blank"
               >
                 <span class="visually-hidden">Gmail</span>
-                <svg width="30" height="30">
+                <svg width="38" height="38">
                   <use xlink:href="img/sprites.svg#mail"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="link social__link"
+                href="https://www.linkedin.com/in/kazankovstas/"
+                target="_blank"
+              >
+                <span class="visually-hidden">Gmail</span>
+                <svg width="38" height="38">
+                  <use xlink:href="img/sprites.svg#linkedin"></use>
                 </svg>
               </a>
             </li>

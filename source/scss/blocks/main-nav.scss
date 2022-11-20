@@ -2,14 +2,27 @@
   position: absolute;
   top: 80px;
   width: 100%;
+  border-bottom: 1px solid #3c3c3c;
   @media (min-width: $tablet-width) {
     top: 0;
   }
 }
 
 .main-nav {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.main-nav__title {
+  color: #fff;
 }
 
 .main-nav__toggle {
@@ -68,13 +81,13 @@
 
 .main-nav__item {
   width: 100%;
-  background-color: rgba($color: #000000, $alpha: 0.7);
+  background-color: rgba($color: #000000, $alpha: 0.95);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
-    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    rgba(255, 255, 255, 0.15) 0px 1px 0px inset;
   @media (min-width: $tablet-width) {
     box-shadow: none;
     width: auto;
